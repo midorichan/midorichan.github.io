@@ -1,24 +1,52 @@
-body {
+/*body {
     margin: 60px auto;
     width: 70%;
+
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+ul.posts li {
     list-style: none;
-    font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+*/
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto 100px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
 }
-a {
-    text-decoration: none;
-    color: #999;
+
+.header {
+    grid-area: h;
+
 }
-a:hover {
-    text-decoration: underline;
+
+.content {
+    grid-area: c;
 }
+
+.footer {
+    grid-area: f;
+}
+
+.container > div {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+html, body {
+    margin: 60px auto;
+}
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -29,21 +57,36 @@ h2 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    color: #333;
-}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #333;
 }
 
-ul.posts li {
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    
+    
+a {
+     text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
     list-style: none;
+    font-weight: bold;
 }

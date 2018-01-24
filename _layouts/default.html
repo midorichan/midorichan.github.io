@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 		<title>{{ page.title }}</title>
 		<link rel="stylesheet" href="{{ 'css/main.css' | absolute_url }}">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-				<li><a href="/portfolio">Portfolio</a></li>
-				<li><a href="https://medium.com/@midorichan">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		{{ content }}
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="https://github.com/midorichan">github.com/midorichan</a></li>
-			</ul>
-		</footer>
-	</body>
+		<style>
+				
+			</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li>LOGO</li>
+						<li><a href="/portfolio">Portfolio</a></li>
+						<li><a href="https://medium.com/@midorichan">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+            <div class="content">
+					{{ content }}
+			</div><!-- /.content -->
+            <div class="footer">
+				<footer>
+					<ul>
+						<li><a href="https://github.com/midorichan">github.com/midorichan</a></li>
+					</ul>
+				</footer>
+			</div>
+        </div>
+    </body>
 </html>
