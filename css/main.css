@@ -1,7 +1,4 @@
-/*body {
-    margin: 60px auto;
-    width: 70%;
-
+/*
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -12,6 +9,11 @@ ul.posts li {
     list-style: none;
 }
 */
+
+html, body {
+    margin: 0 auto;
+    width: 80%;
+}
 
 .container {
     height: 100%;
@@ -26,26 +28,30 @@ ul.posts li {
 
 .header {
     grid-area: h;
+    justify-content: right;
 
+}
+
+.logo {
+    background-image: url(../images/logo.png);
+    justify-content: left;
 }
 
 .content {
     grid-area: c;
+    justify-content: center;
 }
 
 .footer {
     grid-area: f;
+    justify-content: center;
 }
 
 .container > div {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-html, body {
-    margin: 60px auto;
-}
 
 h1 {
     font-size: 3em;
@@ -76,12 +82,18 @@ nav ul li, footer ul li {
     
     
 a {
-     text-decoration: none;
+    text-decoration: none;
     color: #999;
 }
 
+a .current {
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+
 a:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    color: red;
 }
 
 nav ul, footer ul {
