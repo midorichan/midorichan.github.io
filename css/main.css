@@ -28,13 +28,13 @@ html, body {
 
 .header {
     grid-area: h;
+    display: flex;
     justify-content: right;
 
 }
 
 .logo {
-    background-image: url(../images/logo.png);
-    justify-content: left;
+    margin-right: auto;
 }
 
 .content {
@@ -44,12 +44,13 @@ html, body {
 
 .footer {
     grid-area: f;
-    justify-content: center;
+    
 }
 
 .container > div {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
