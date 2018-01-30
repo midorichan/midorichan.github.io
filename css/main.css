@@ -20,7 +20,7 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 60px auto 100px;
+    grid-template-rows: 80px auto 100px;
     grid-template-areas: 
         "h h h h h"
         "c c c c c"
