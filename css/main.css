@@ -90,12 +90,12 @@ a {
 
 a .current {
     padding-bottom: 5px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #C70039;
 }
 
 a:hover {
     font-weight: bold;
-    color: red;
+    color: #C70039;
 }
 
 nav ul, footer ul {
