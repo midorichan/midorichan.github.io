@@ -54,15 +54,23 @@ html, body {
 
 
 h1 {
-    font-size: 3em;
     font-family: 'Montserrat', sans-serif;
-    max-width: 550px;
+    font-size: 3em;
+    font-weight: 800;
+    max-width: 600px;
 }
 
 h2 {
-    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
     color: #616161;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 
