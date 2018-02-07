@@ -25,15 +25,15 @@ html, body {
 
 .logo {
     margin-right: auto;
+    margin-top: auto;
 }
 
 .hero {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .content {
     grid-area: c;
-    /* justify-content: center; */
 }
 
 .container > .content{
@@ -46,13 +46,6 @@ html, body {
     grid-column: 2;
     
 }
-
-/* .container > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -80,8 +73,12 @@ h3 {
 
 
 footer {
-    border-top: 1px solid #d5d5d5;
+    /* border-top: 1px solid #d5d5d5; */
     font-size: .8em;
+}
+
+footer a {
+    color: #000000;
 }
 
 p {
@@ -102,7 +99,7 @@ a {
     color: #999;
 }
 
-a .current {
+.currentLink {
     padding-bottom: 5px;
     border-bottom: 2px solid #C70039;
 }
