@@ -1,67 +1,11 @@
+/* General styles */
+
 html, body {
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 80px auto 60px;
-    grid-template-areas: 
-        "h h h"
-        "c c c"
-        "f f f";
-}
-
-.article {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 80px auto 60px;
-    grid-template-areas: 
-        "h h h"
-        "c c c"
-        "f f f";
-}
-
-.article > .content{
-    grid-column:2;
-    min-width: 0;
-}
-
-.header {
-    grid-area: h;
-    display: flex;
-    justify-content: right;
-    grid-column: 2;
-    padding: 20px 0;
-}
-
-.logo {
-    margin-right: auto;
-    margin-top: auto;
-}
-
-.hero {
-    margin-top: 70px;
-}
-
-.content {
-    grid-area: c;
-}
-
-.container > .content{
-    grid-column:2;
-    min-width: 0;
-}
-
-.footer {
-    grid-area: f;
-    grid-column: 2;
-    
-}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -69,6 +13,7 @@ h1 {
     font-weight: 800;
     line-height: 1.2em;
     max-width: 600px;
+    letter-spacing: -2px;
 }
 
 h1 > span {
@@ -90,15 +35,6 @@ h3 {
 }
 
 
-footer {
-    /* border-top: 1px solid #d5d5d5; */
-    font-size: .8em;
-}
-
-footer a {
-    color: #000000;
-}
-
 p {
     font-size: 1.2em;
     line-height: 1.8em;
@@ -106,7 +42,7 @@ p {
     color: #333;
 }
 
-nav ul li, footer ul li {
+nav ul li, .findme ul li {
     display: inline;
     margin-right: 20px;
     }
@@ -126,7 +62,7 @@ a:hover {
     color: #C70039;
 }
 
-nav ul, footer ul {
+nav ul, .findme ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding: 0px;
@@ -141,4 +77,81 @@ nav ul, footer ul {
   ::selection {
     color: white;
     background: black;
-  } 
+  }
+
+
+/* Grid styles */
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 80px auto 60px;
+    grid-template-areas: 
+        "h h h h"
+        "c c c c"
+        "f f f f";
+}
+
+article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 80px auto 60px;
+    grid-template-areas: 
+        "h h h h"
+        "c c c c"
+        "f f f f";
+}
+
+article > .content{
+    grid-column: 2 / span 2;
+    min-width: 0;
+}
+
+.content > figure {
+    grid-column: 1 / span 2;
+    margin: 20px 0;
+}
+
+.headlines {
+    grid-area: t;
+    grid-column:2;
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    justify-content: right;
+    grid-column: 2 / 4;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.paula {
+    grid-area: p;
+    margin-top: 30px;
+}
+
+.hero {
+    margin-top: 70px;
+}
+
+.content {
+    grid-area: c;
+}
+
+.container > .content{
+    grid-column:2;
+    min-width: 0;
+}
+
+.findme {
+    grid-area: f;
+    grid-column: 2;
+    font-size: .8em;
+}
