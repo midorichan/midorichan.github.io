@@ -39,7 +39,7 @@ p {
     font-size: 1.2em;
     line-height: 1.8em;
     font-family: 'Merriweather', serif;
-    color: #333;
+    color: #000;
 }
 
 nav ul li, .findme ul li {
@@ -50,12 +50,7 @@ nav ul li, .findme ul li {
     
 a {
     text-decoration: none;
-    color: #999;
-}
-
-.currentLink {
-    padding-bottom: 5px;
-    border-bottom: 2px solid #C70039;
+    color: #000;
 }
 
 a:hover {
@@ -80,45 +75,9 @@ nav ul, .findme ul {
   }
 
 
-/* Grid styles */
+/* Grid styles HOME */
 
-.container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
-    grid-template-rows: 80px auto 60px;
-    grid-template-areas: 
-        "h h h h"
-        "c c c c"
-        "f f f f";
-}
-
-article {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
-    grid-template-rows: 80px auto 60px;
-    grid-template-areas: 
-        "h h h h"
-        "c c c c"
-        "f f f f";
-}
-
-article > .content{
-    grid-column: 2 / span 2;
-    min-width: 0;
-}
-
-.content > figure {
-    grid-column: 1 / span 2;
-    margin: 20px 0;
-}
-
-.headlines {
-    grid-area: t;
-    grid-column:2;
-}
-
+/* ---- header ---- */
 .header {
     grid-area: h;
     display: flex;
@@ -132,9 +91,17 @@ article > .content{
     margin-top: auto;
 }
 
-.paula {
-    grid-area: p;
-    margin-top: 30px;
+/* ---- main content ---- */
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 80px auto 60px;
+    grid-template-areas: 
+        "h h h h"
+        "c c c c"
+        "f f f f";
 }
 
 .hero {
@@ -148,6 +115,35 @@ article > .content{
 .container > .content{
     grid-column:2;
     min-width: 0;
+}
+
+
+/* Grid styles ABOUT */
+
+.about {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 80px auto 60px;
+    grid-template-areas: 
+        "h h h h"
+        "c c c c"
+        "f f f f";
+}
+
+.about > .content{
+    grid-column: 2 / span 2;
+    min-width: 0;
+}
+
+.content > figure {
+    grid-column: 1 / span 2;
+    margin: 20px 0;
+}
+
+.headlines {
+    grid-area: t;
+    grid-column:2;
 }
 
 .findme {
