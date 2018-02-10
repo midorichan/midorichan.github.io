@@ -187,6 +187,7 @@ nav ul, .findme ul {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
     min-width: 0;
+    margin-bottom: 80px;
 }
 
 .pic2 {
@@ -199,6 +200,7 @@ nav ul, .findme ul {
     grid-column: 3 / 5;
     grid-row: 4 / 5;
     min-width: 0;
+    margin-bottom: 80px;
 }
 
 .pic3 {
@@ -211,6 +213,7 @@ nav ul, .findme ul {
     grid-column: 2 / 4;
     grid-row: 5 / 6;
     min-width: 0;
+    margin-bottom: 80px;
 }
 
 .work > .findme {
