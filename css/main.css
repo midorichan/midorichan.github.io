@@ -318,4 +318,8 @@ nav ul, .findme ul {
         line-height: 1.7em;
     }
 
+    .hello  {
+        max-width: 200px;
+    }
+    
 }
