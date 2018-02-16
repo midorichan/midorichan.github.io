@@ -57,6 +57,10 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
+p > a {
+    text-decoration: underline;
+}
     
 a {
     text-decoration: none;
