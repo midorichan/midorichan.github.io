@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">About</a></li>
+				<li><a href="/portfolio">Portfolio</a></li>
+				<li><a href="https://medium.com/@midorichan">Blog</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		{{ content }}
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="https://github.com/midorichan">github.com/midorichan</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
