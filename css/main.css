@@ -46,6 +46,7 @@ p {
     color: rgba(0,0,0,.84);
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
+    padding-bottom: 1.5em;
 }
 
 nav ul li, .findme ul li {
