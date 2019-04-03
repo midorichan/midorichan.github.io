@@ -72,6 +72,10 @@ a:hover {
     color: #C70039;
 }
 
+.hero .content h3 a {
+    color: #C70039;
+}
+
 nav ul, .findme ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
